@@ -133,15 +133,30 @@ ASC LIMIT 5;
 SELECT *
 FROM artist
 WHERE nname LIKE 'Black%';
-
 -- 5
+SELECT *
+FROM artist
+WHERE name LIKE '%Black&';
 
 -- Table - employee
 -- 1
+SELECT first_name, last_name
+FROM employee
+WHERE country = 'Calgary';
 -- 2
+SELECT MAX(birth_date)
+FROM employee;
 -- 3
+SELECT MIN(birth_date)
+FROM employee;
 -- 4
+SELECT *
+FROM employees
+WHERE reports_to = 2;
 -- 5
+SELECT COUNT(*)
+FROM employee
+WHERE city = 'Lethbridge';
 
 -- Table - invoice
 -- 1
