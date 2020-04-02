@@ -83,7 +83,20 @@ WHERE favorite_color IN ('yellow', 'purple');
 
 -- Table - orders
 -- 1
+CREATE TABLE orders
+(
+    order_id SERIAL PRIMARY KEY,
+    person_id INTEGER,
+    product_name VARCHAR(200),
+    product_price NUMERIC,
+    quanity INTEGER
+);
 -- 2
+INSERT INTO orders
+    (person_id, product_name, product_price, quanity)
+VALUES
+    (2, 'Chicken Alfredo', 12.99, 1),
+    (4, 'Meatloaf', 10.47, 2);
 -- 3
 -- 4
 -- 5
