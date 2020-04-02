@@ -113,9 +113,27 @@ WHERE person_id = 2;
 
 -- Table - artist
 -- 1
+INSERT INTO artist
+    (name)
+VALUES
+    ('Raxa Lord'),
+    ('Riff Raff'),
+    ('Kid Cudi');
 -- 2
+SELECT *
+FROM artist
+ORDER BY name 
+DESC LIMIT 10;
 -- 3
+SELECT * 
+FROM artist
+ORDER BY name 
+ASC LIMIT 5;
 -- 4
+SELECT *
+FROM artist
+WHERE nname LIKE 'Black%';
+
 -- 5
 
 -- Table - employee
