@@ -98,9 +98,18 @@ VALUES
     (2, 'Chicken Alfredo', 12.99, 1),
     (4, 'Meatloaf', 10.47, 2);
 -- 3
+SELECT *
+FROM orders;
 -- 4
+SELECT SUM(quanity)
+FROM orders;
 -- 5
+SELECT SUM(product_price)
+FROM orders;
 -- 6
+SELECT SUM(product_price * quanity)
+FROM orders
+WHERE person_id = 2;
 
 -- Table - artist
 -- 1
